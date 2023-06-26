@@ -32,7 +32,7 @@ void insertion_sort_list(listint_t **list)
 			two->next = tmp;
 			two->prev = one;
 
-			ptint_list(*list);
+			print_list(*list);
 			two = one->prev;
 		}
 		one = one->next;
@@ -41,4 +41,3 @@ void insertion_sort_list(listint_t **list)
 			two = one->prev;
 	}
 }
-
